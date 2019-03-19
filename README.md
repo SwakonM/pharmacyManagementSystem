@@ -1,0 +1,1 @@
+# The repository will contain applications for managing the pharmacy
