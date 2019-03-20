@@ -40,6 +40,14 @@ public class chemicalsApp {
                 filter(element -> element.getId() == index).findFirst();
         return first.get();
     }
+    @PostMapping
+    public boolean addChemicals(@RequestBody chemicals chemicals1) {
+        return chemicals.add(chemicals1);
+    }
+    @PutMapping
+    public boolean upgradeChemicals(@RequestBody chemicals chemicals1) {
+        return chemicals.add(chemicals1);
+    }
 
     @DeleteMapping // usuwa element
     public boolean deleteChemicals(@RequestParam int index) {
